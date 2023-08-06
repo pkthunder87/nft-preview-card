@@ -1,3 +1,69 @@
 .nft-card {
+  height: 59.5rem;
+  width: 35rem;
   background-color: var(--color-Very-dark-blue-card-bg);
+  overflow: hidden;
+  border-radius: 12px;
+
+  display: grid;
+  grid-template-rows: 2.5fr 1fr 1fr;
+  padding: 2.5rem;
+
+  .nft-top {
+    &__image {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      object-fit: cover;
+      background-image: url(../images/image-equilibrium.jpg);
+
+      border-radius: 12px;
+    }
+  }
+
+  .nft-mid {
+    &__title {
+      color: var(--color-white);
+    }
+
+    &__details {
+      font-weight: 300;
+    }
+  }
+
+  .nft-bot {
+    &__labels {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__token {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+
+      &--text {
+        color: var(--color-cyan);
+      }
+    }
+
+    &__days {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 6px;
+
+      &--icon {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__user--image {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
 }
