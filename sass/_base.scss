@@ -1,5 +1,18 @@
 // CSS Custom Properties
 :root {
+  // Colors
+
+  // Primary
+
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+
+  // Neutral
+
+  --color-Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --color-Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --color-Very-dark-blue-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -24,6 +37,8 @@ body {
 
   font-family: "Outfit", sans-serif;
   font-size: 1.6rem;
+  color: var(--color-soft-blue);
+  background-color: var(--color-Very-dark-blue-main-bg);
 
   display: flex;
   flex-direction: column;

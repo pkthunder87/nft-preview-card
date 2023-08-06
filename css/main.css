@@ -1,3 +1,12 @@
+:root {
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --color-Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --color-Very-dark-blue-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +30,8 @@ body {
   width: 100vw;
   font-family: "Outfit", sans-serif;
   font-size: 1.6rem;
+  color: var(--color-soft-blue);
+  background-color: var(--color-Very-dark-blue-main-bg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +45,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nft-card {
+  background-color: var(--color-Very-dark-blue-card-bg);
 }
 
 .attribution {
