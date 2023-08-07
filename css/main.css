@@ -64,13 +64,24 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   background-image: url(../images/image-equilibrium.jpg);
-  border-radius: 12px;
+  border-radius: 10px;
+}
+.nft-card .nft-mid {
+  margin-top: 2.1rem;
 }
 .nft-card .nft-mid__title {
   color: var(--color-white);
+  font-size: 2.2rem;
+  font-weight: 400;
 }
 .nft-card .nft-mid__details {
   font-weight: 300;
+  margin-top: 1.8rem;
+  line-height: 1.4;
+}
+.nft-card .nft-bot {
+  margin-top: 2.2rem;
+  letter-spacing: 1px;
 }
 .nft-card .nft-bot__labels {
   display: -webkit-box;
@@ -87,13 +98,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 6px;
 }
 .nft-card .nft-bot__token--text {
   color: var(--color-cyan);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .nft-card .nft-bot__days {
   display: -webkit-box;
@@ -105,6 +115,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.4rem;
   gap: 6px;
 }
 .nft-card .nft-bot__days--icon {
@@ -115,9 +126,42 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.nft-card .nft-bot__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  height: 1px;
+  background: var(--color-Very-dark-blue-line);
+}
+.nft-card .nft-bot__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
 .nft-card .nft-bot__user--image {
-  height: 5rem;
-  width: 5rem;
+  height: 3.3rem;
+  width: 3.3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.nft-card .nft-bot__user--details {
+  display: inline-block;
+  -webkit-transform: scale(1, 1.1);
+      -ms-transform: scale(1, 1.1);
+          transform: scale(1, 1.1);
+}
+.nft-card .nft-bot__user span {
+  color: var(--color-white);
 }
 
 .attribution {
