@@ -24,6 +24,11 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 55%;
+  }
+}
 
 body {
   height: 100vh;
@@ -200,7 +205,8 @@ body {
 }
 @media only screen and (max-height: 850px) {
   .attribution {
-    bottom: 2rem;
+    position: relative;
+    bottom: -2rem;
   }
 }
 
