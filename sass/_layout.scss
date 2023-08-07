@@ -7,7 +7,7 @@
   position: absolute;
   bottom: 10rem;
 
-  @media only screen and (max-height: 850px) {
+  @include respond() {
     position: relative;
     bottom: -2rem;
   }

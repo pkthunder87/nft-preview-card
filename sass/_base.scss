@@ -15,6 +15,12 @@
   --color-white: hsl(0, 0%, 100%);
 }
 
+@mixin respond {
+  @media only screen and (max-width: 425px) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +36,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @media only screen and (max-width: 425px) {
+  @include respond() {
     font-size: 55%;
   }
 }
