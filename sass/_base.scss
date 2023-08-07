@@ -4,7 +4,7 @@
 
   // Primary
 
-  --color-soft-blue: hsl(215, 52%, 70%);
+  --color-soft-blue: hsl(215, 51%, 70%);
   --color-cyan: hsl(178, 100%, 50%);
 
   // Neutral
@@ -47,8 +47,9 @@ body {
 
   font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
-  color: #7d9bc4;
+  color: var(--color-soft-blue);
   background-color: var(--color-Very-dark-blue-main-bg);
+  -webkit-font-smoothing: antialiased;
 
   display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 :root {
-  --color-soft-blue: hsl(215, 52%, 70%);
+  --color-soft-blue: hsl(215, 51%, 70%);
   --color-cyan: hsl(178, 100%, 50%);
   --color-Very-dark-blue-main-bg: hsla(216, 54%, 11%);
   --color-Very-dark-blue-card-bg: hsl(216, 50%, 16%);
@@ -35,8 +35,9 @@ body {
   width: 100vw;
   font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
-  color: #7d9bc4;
+  color: var(--color-soft-blue);
   background-color: var(--color-Very-dark-blue-main-bg);
+  -webkit-font-smoothing: antialiased;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +98,7 @@ body {
 .nft-card .nft-mid__title {
   color: var(--color-white);
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
 }
 .nft-card .nft-mid__title:hover {
@@ -131,7 +132,7 @@ body {
 }
 .nft-card .nft-bot__token--text {
   color: var(--color-cyan);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .nft-card .nft-bot__days {
@@ -175,7 +176,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .nft-card .nft-bot__user--image {
   height: 3.3rem;
@@ -185,9 +186,6 @@ body {
 }
 .nft-card .nft-bot__user--details {
   display: inline-block;
-  -webkit-transform: scale(1, 1.1);
-      -ms-transform: scale(1, 1.1);
-          transform: scale(1, 1.1);
 }
 .nft-card .nft-bot__user span {
   color: var(--color-white);
