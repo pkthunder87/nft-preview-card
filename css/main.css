@@ -1,5 +1,5 @@
 :root {
-  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-soft-blue: hsl(215, 52%, 70%);
   --color-cyan: hsl(178, 100%, 50%);
   --color-Very-dark-blue-main-bg: hsl(217, 54%, 11%);
   --color-Very-dark-blue-card-bg: hsl(216, 50%, 16%);
@@ -30,7 +30,7 @@ body {
   width: 100vw;
   font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
-  color: var(--color-soft-blue);
+  color: #7d9bc4;
   background-color: var(--color-Very-dark-blue-main-bg);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,10 +61,28 @@ body {
   height: 100%;
   width: 100%;
   background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
   background-image: url(../images/image-equilibrium.jpg);
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.nft-card .nft-top__image--icon {
+  opacity: 0;
+}
+.nft-card .nft-top__image:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 230, 222, 0.6))), url(../images/image-equilibrium.jpg);
+  background-image: linear-gradient(rgba(0, 230, 222, 0.6)), url(../images/image-equilibrium.jpg);
+}
+.nft-card .nft-top__image:hover .nft-top__image--icon {
+  opacity: 1;
 }
 .nft-card .nft-mid {
   margin-top: 2.1rem;
@@ -73,6 +91,10 @@ body {
   color: var(--color-white);
   font-size: 2.2rem;
   font-weight: 400;
+  cursor: pointer;
+}
+.nft-card .nft-mid__title:hover {
+  color: var(--color-cyan);
 }
 .nft-card .nft-mid__details {
   font-weight: 300;
@@ -162,6 +184,10 @@ body {
 }
 .nft-card .nft-bot__user span {
   color: var(--color-white);
+  cursor: pointer;
+}
+.nft-card .nft-bot__user span:hover {
+  color: var(--color-cyan);
 }
 
 .attribution {
